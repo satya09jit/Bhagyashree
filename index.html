@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff1f5">
+
+  <title>A Little Something For You ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="background-hearts" id="hearts"></div>
+
+  <main class="app">
+
+    <!-- WELCOME SCREEN -->
+    <section class="screen welcome-screen active" id="welcome">
+
+      <div class="welcome-icon">💌</div>
+
+      <span class="eyebrow">A LITTLE SOMETHING FOR YOU</span>
+
+      <h1>Hey, <span>Beautiful!</span> 🌷</h1>
+
+      <p>
+        I have five little things to ask you.
+        Nothing serious... just something
+        I wanted to share with you.
+      </p>
+
+      <button class="primary-btn" id="startBtn">
+        Let's begin <span>♡</span>
+      </button>
+
+      <div class="bottom-note">
+        Made with a little courage ❤️
+      </div>
+
+    </section>
+
+
+    <!-- QUESTION SCREEN -->
+    <section class="screen quiz-screen" id="quiz">
+
+      <div class="quiz-top">
+        <span class="eyebrow">JUST FOR YOU ♡</span>
+        <span id="questionCount">01 / 05</span>
+      </div>
+
+      <div class="progress-track">
+        <div class="progress-fill" id="progress"></div>
+      </div>
+
+      <div class="question-content" id="questionContent">
+
+        <div class="question-emoji" id="questionEmoji">🌸</div>
+
+        <span class="question-label">A LITTLE QUESTION</span>
+
+        <h2 id="questionText"></h2>
+
+        <div class="options" id="options"></div>
+
+        <p class="hint">
+          Choose whatever feels right. No wrong answers! 🤭
+        </p>
+
+      </div>
+
+
+      <!-- PERSONAL MESSAGE SCREEN -->
+      <div class="reaction-content" id="reactionContent">
+
+        <div class="reaction-heart">💗</div>
+
+        <span class="question-label">A LITTLE THOUGHT</span>
+
+        <h2 id="reactionText"></h2>
+
+        <p id="reactionSubtext"></p>
+
+        <button class="primary-btn" id="nextBtn">
+          Next little thing <span>→</span>
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL REVEAL -->
+    <section class="screen final-screen" id="final">
+
+      <div class="final-envelope">💌</div>
+
+      <span class="eyebrow">ONE LAST LITTLE THING</span>
+
+      <h1>Okay, it's <span>You...</span> 🙈</h1>
+
+      <!-- YOUR PHOTO -->
+      <div class="memory-card">
+
+        <div class="photo-frame">
+          <img
+            src="her-photo.jpeg"
+            alt="A special picture"
+            id="finalPhoto"
+          >
+        </div>
+
+        <p class="photo-caption">
+          A little picture of someone special ♡
+        </p>
+
+      </div>
+
+
+      <!-- FINAL MESSAGE -->
+      <div class="final-letter">
+
+        <p>
+          I don't know if you realise this,
+          but talking with you genuinely makes my day.
+        </p>
+
+        <p>
+          Seeing your messages, your smile,
+          and even our little conversations
+          make ordinary moments feel special.
+        </p>
+
+        <p>
+          I just wanted you to know that
+          you're someone I really like
+          and someone who has become
+          a little special to me.
+        </p>
+
+        <h2>Keep smiling, okay? ❤️</h2>
+
+        <div class="signature">
+          With a little courage,<br>
+          Someone who thinks you're special. 🌷
+        </div>
+
+      </div>
+
+
+      <!-- SONG PLAYER -->
+      <div class="song-player">
+
+        <div class="song-icon">🎵</div>
+
+        <div class="song-info">
+          <strong>A little song for you</strong>
+          <small>Because you make my day special ♡</small>
+        </div>
+
+        <audio id="finalSong" controls preload="metadata">
+          <source src="our-song.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+
+      </div>
+
+
+      <p class="final-footer">
+        No pressure. Just wanted to make you smile. ❤️
+      </p>
+
+      <button class="replay-btn" id="replayBtn">
+        Experience again ↻
+      </button>
+
+    </section>
+
+  </main>
+
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
+  <!-- CUSTOM JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
